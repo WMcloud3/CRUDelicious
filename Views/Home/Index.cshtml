@@ -1,0 +1,22 @@
+﻿<h1>Welcome to CRUDelicious</h1>
+
+<a href="/form" class= "btn btn-primary btn-lg">Add a Dish</a>
+
+<div id="container">
+    <h2>Check out some recent dishes!</h2>
+
+    <table class="table table-dark table-hover">
+        <tr>
+            <th>Name</th>
+            <th>Chef</th>
+        </tr>
+
+        @foreach (Dish d in ViewBag.AllDishes)
+        {
+            <tr>
+                <td><a href="/dishes/@d.DishId">@d.Name</a></td>
+                <td>@d.Chef</td>
+            </tr>
+        }
+    </table>
+</div>

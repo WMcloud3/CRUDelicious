@@ -1,0 +1,12 @@
+<a href="">Home</a>
+
+<div id="container">
+    <h1>@ViewBag.SingleDish.Name</h1>
+    <h2>@ViewBag.SingleDish.Chef</h2>
+    <h2>@ViewBag.SingleDish.Description</h2>
+    <h2>Calories: @ViewBag.SingleDish.Calories</h2>
+    <h2>Tasiness: @ViewBag.SingleDish.Tastiness</h2>
+</div>
+
+<a href="/dishes/@ViewBag.SingleDish.DishId/edit" class="btm btn-sm btn-info">Edit</a>
+<a href="/dishes/@ViewBag.SingleDish.DishId/delete" class="btm btn-sm btn-danger">Delete</a>
